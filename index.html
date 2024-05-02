@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex justify-center items-center h-svh w-screen overflow-x-hidden bg-black"
+  >
+    <main
+      class="bg-neutral-900 border border-neutral-700 p-6 rounded-lg h-fit lg:w-1/4 w-1/2"
+    >
+      <h1
+        class="scroll-m-20 text-4xl text-white font-extrabold tracking-tight lg:text-5xl"
+      >
+        Crie uma conta
+      </h1>
+      <p class="leading-7 [&:not(:first-child)]:mt-2 text-sm text-neutral-500">
+        Preencha os campos abaixo para criar sua conta
+      </p>
+      <form id="form" action="/" class="mt-12 flex flex-col gap-4">
+        <div>
+          <label for="name" class="text-neutral-500">Nome de usuário</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="input bg-black border border-neutral-700 text-white mt-1 w-full p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:border-transparent"
+            placeholder=""
+          />
+          <small
+            class="text-xs font-medium leading-none text-red-800"
+            id="error"
+          ></small>
+        </div>
+        <div>
+          <label for="email" class="text-neutral-500">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input bg-black border border-neutral-700 text-white mt-1 w-full p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:border-transparent"
+            placeholder=""
+          />
+          <small
+            class="text-xs font-medium leading-none text-red-800"
+            id="error"
+          ></small>
+        </div>
+        <div>
+          <label for="password" class="text-neutral-500">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input bg-black border border-neutral-700 text-white mt-1 w-full p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:border-transparent"
+            placeholder=""
+          />
+          <small
+            class="text-xs font-medium leading-none text-red-800"
+            id="error"
+          ></small>
+        </div>
+        <div>
+          <label for="password" class="text-neutral-500">Confirmar senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input bg-black border border-neutral-700 text-white mt-1 w-full p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:border-transparent"
+            placeholder=""
+          />
+          <small
+            class="text-xs font-medium leading-none text-red-800"
+            id="error"
+          ></small>
+        </div>
+        <button
+          type="submit"
+          class="bg-white font-medium mt-1 w-full p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:border-transparent hover:bg-neutral-100"
+        >
+          Criar conta
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
